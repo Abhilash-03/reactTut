@@ -1,38 +1,90 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app{
   text-align: center;
+  margin: 2rem auto;
+  height: calc(100% - 10px);
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nameContainer button{
+  width: 30%;
+  padding: 5px;
+  font-size: 19px;
+  background-color: black;
   color: white;
+   margin: 2rem;
+   cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.listItems button{
+  /* width: 30%; */
+  padding: 3px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+   margin: 10px;
+   cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listItems button:hover, .listItems button:focus, form #addBtn:hover{
+  color: aquamarine;
 }
+
+.listItems label{
+  font-size: larger;
+  padding: 2px;
+}
+
+li> input[type= 'checkbox']:checked + label{
+  text-decoration: line-through 2px rgb(23, 8, 109);
+  color: rgb(255, 0, 0);
+}
+
+li{
+  background-color: rgb(212, 212, 212);
+  margin: 5px auto;
+  list-style-type: none;
+  width: 40%;
+  
+}
+
+#addList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+#addItem{
+  width: 40%;
+  padding: 10px;
+  border: 2px solid green;
+  color: black;
+  /* border-radius: 5px; */
+  font-size: 19px;
+  outline: none;
+}
+
+#addItem:hover, #addItem:focus{
+  background-color: #e0efee;
+     border: 2px solid rgb(82, 219, 82);
+}
+
+#addBtn{
+  width: 40px;
+    height: 40px;
+    /* border-radius: 10px; */
+    background: black;
+    color: white;
+    border: 2px solid black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
