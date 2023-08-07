@@ -4,7 +4,7 @@ import ItemLists from './ItemLists'
 function GrocieryLists({items, handleCheck, handleDelete}) {
 
   return (
-    <div>
+    <div className='list-item'>
       
       {items.length > 0?
        ( <ItemLists
@@ -13,6 +13,7 @@ function GrocieryLists({items, handleCheck, handleDelete}) {
           handleDelete={handleDelete}
         />)
        :( <p>Lists is empty</p> )}
+
     </div>
   )
 }
