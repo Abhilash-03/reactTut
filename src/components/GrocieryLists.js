@@ -12,7 +12,7 @@ function GrocieryLists({items, handleCheck, handleDelete}) {
           handleCheck={handleCheck}
           handleDelete={handleDelete}
         />)
-       :( <p>Lists is empty</p> )}
+       :( <p>List is empty</p> )}
 
     </div>
   )
